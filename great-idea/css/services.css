@@ -63,49 +63,77 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* My code */
 
-body {
+.body-container {
 	width: 900px;
-	margin: auto;
+    margin: auto;
 }
 header {
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
-	margin: 20px 0 20px 0;
+    justify-content: space-between;
+    align-items: center;
+	margin: 20px 0px;
 }
 nav a {
 	
 	text-decoration: none;
 	color: #BBB;
-	margin: 5px 15px 5px 15px;
-}
-.top, .mid-top, .mid-bottom {
-	display: flex;
-	justify-content: space-around;
-	margin: 35px 0;
-}
-.top {
-	align-items: center;
-}
-/* .top img {
-	position: relative;
-	left: 50px;
-} */
-.top-left {
-	text-align: center;
+	margin: 0px 15px;
 }
 h1 {
-	font-size: 350%;
+    font-size: 200%;
 }
-.middle-img {
-	width: 100%;
+.top, .card-container, .bottom {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-.contact {
-	margin: 35px 0 35px 0;
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 900px;
+    /* border: 1px dashed red; */
+}
+.cards {
+    background-color: #EEE;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 35px;
+    width: 375px;
+    /* align-items:  */
+}
+.learn-more {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100px;
+}
+.bottom {
+    display: flex;
+}
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+ul {
+    list-style: square;
+    position: relative;
+    left: 30px;
+}
+li {
+    margin-top: 10px;
 }
 footer {
-	text-align: center;
-	margin: 35px;
+    text-align: center;
+    margin: 25px;
 }
+
+/* end */
